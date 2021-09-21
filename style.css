@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;900&display=swap');
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.logo-top {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    height: 20px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-basis: 30%;
+}
+
+.img1-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -70px;
+    gap: 15px;
+}
+
+.img1-2 {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}   
+
+.img1-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.center {
+    text-align: center;
+    flex-basis: 40%;
+}
+
+.center-text1 {
+    color: #28283D;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.center-text2 {
+    color: #87879D;
+    font-size: 20px;
+}
+
+.center-button1 {
+    height: 50px;
+    width: 180px;
+    background-color: #4D96A9;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+
+.center-button1:hidde {
+    background-color: #71C0D4;
+}
+
+.button-text {
+    color: #8FE3F9;
+}
+
+.center-button2 {
+    background-color: #855FB1;
+    height: 50px;
+    width: 140px;
+    color: white;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-basis: 30%;
+    overflow: hidden;
+}
+
+.img2-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img2-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.img2-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -50px;
+}
+
+.img_style {
+   border-radius: 50%;
+   height: 100px;
+}
+
+.line_and_circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.line {
+    border-left: 1px solid #87879D;
+    height: 80px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid #87879D;
+    padding: 10px;
+    background-color: white;
+}
+
+.number {
+    color: #87879D;
+    font-size: 14px;
+}
+
+.main-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;    
+    margin-top: 40px;
+}
+
+.img_chat {
+    height: auto;
+    width: 20%;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.main-text {
+    margin: 0 auto;
+    max-width: 450px;
+    margin-top: 100px;
+}
+
+.subtitle {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4D96A9;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+
+.subtitle-text1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    height: 800;
+    color: #28283D;
+    margin-top: -5px;
+}
+
+.subtitle-text2 {
+    text-align: center;
+    color: #87879D;
+}
+
+.line_and_circle_2 {
+    color: #87879D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url(/starter-code/assets/desktop/image-footer.jpg);
+    padding: 90px 0 70px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.box1 {
+    color: white;
+    font-size: 43px;
+    padding: 0 50px;
+    text-align: left;
+    font-weight: 900;
+    width: 33.33%;    
+}
+
+.box2 {
+    color: white;
+    width: 33.33%;    
+    font-size: 18px;
+    text-align: left;
+}
+
+.box3 button {
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    background-color: #855FB1;
+    color: white;
+    margin-left: 50px;
+}
+
+.button-text1 {
+    color: #D9B8FF;
+}
+
+@media screen and (max-width: 1025px) {
+    .top {
+        flex-wrap: wrap;
+    }
+    
+    .center {
+        flex-basis: 100%;
+        order: 2;
+    }
+    .left {
+        flex-basis: 50%;
+    }
+    
+    .right {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-img {
+        flex-wrap: wrap;
+    }
+
+    .img_chat {
+        /* flex-basis: calc(50% - 30px); */
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+}
